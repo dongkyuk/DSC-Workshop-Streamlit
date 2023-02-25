@@ -11,7 +11,7 @@ st.write("This is a simple web app to classify traffic signs.")
 # Load pytorch model
 model = ConvModelClass()
 model.to("cpu")
-model.load_state_dict(torch.load("checkpoint.pth", map_location=torch.device('cpu'))['model_state_dict'])
+# model.load_state_dict(torch.load("checkpoint.pth", map_location=torch.device('cpu'))['model_state_dict'])
 
 classes = ['Traffic Light', 'Speed Limit', 'Crosswalk', 'Stop Sign']
 
